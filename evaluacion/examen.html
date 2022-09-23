@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/mistylo.css">
+</head>
+<body>
+    <div class="menu">
+        <div>
+            <a href="">INICIO</a>
+
+        </div>
+        <div>
+            <a href="">CREACION DE DB</a>
+        </div>
+        <div>
+            <a href="">CREACION DE TABLA </a>
+        </div>
+        <div>
+            <a href="">REGISTRO DE DATOS </a>
+        </div>
+        <div>
+            <a href="">REPORTES</a>
+        </div>
+    </div>
+    <div class="contenedor">
+        <h1>Creacion  de la base de datos </h1>
+        <p>
+            Aqui creamos la base de datos
+        </p>
+       <form action="creardb.php"method="post">
+        <h3 class="etiqueta">nombre DB:</h3>
+        <input class="tbx"  type="text" name="nombrebd"placeholder="coloque aqui el nombre de la base de datos"> <br>
+        <div>
+            <br>
+            <input type="submit" class="boton">
+        </div>
+       </form>
+
+    </div>
+    <div class="contenedor">
+        <h1>Creacion  de las tablas </h1>
+        <p>
+            Aqui creamos las tablas
+        </p>
+        <form action="creartabla.php"method="post">
+            <h3 class="etiqueta">nombre de BD:</h3>
+            <input class="tbx"  type="text" name="nombrebd"placeholder="escriba el nombre de BD"> <br>
+            <h3 class="etiqueta">nombre TABLA:</h3>
+            <input class="tbx"  type="text" name="tabla"placeholder="coloque aqui el nombre de la tabla"> <br>
+            <h3 class="etiqueta">COLUMNAS</h3>
+            <input class="tbx"  type="text" name="d1"placeholder="llave primaria"> <br>
+            <input class="tbx"  type="text" name="d2"placeholder="Atributo 1"> <br>
+            <input class="tbx"  type="text" name="d3"placeholder="Atributo 2"> <br>
+            <input class="tbx"  type="text" name="d4"placeholder="Atributo 3"> <br>
+            <div>
+                <br>
+                <input type="submit" class="boton">
+            </div>
+           </form>
+    </div>
+   
+    <div class="contenedor">
+        <h1>Creacion  de restricciones y llaves </h1>
+        <p>
+            Aqui creamos las llaves
+        </p>
+        
+
+    </div>
+    <div class="contenedor">
+        <h1>Insertar datos </h1>
+        <p>
+            Aqui realizamos el registro de datos
+        </p>
+       
+        <form action="insertar_datos"method="post">
+            <h3 class="etiqueta">nombre de BD:</h3>
+            <input class="tbx"  type="text" name="nombredb"placeholder="escriba el nombre de BD"> <br>
+            <h3 class="etiqueta">nombre TABLA:</h3>
+            <input class="tbx"  type="text" name="nombretabla"placeholder="coloque aqui el nombre de la tabla"> <br>
+            <h3 class="etiqueta">datos a ingresar</h3>
+            <input class="tbx"  type="text" name="p1"placeholder="CI"> <br>
+            <input class="tbx"  type="text" name="p2"placeholder="NOMBRES"> <br>
+            <input class="tbx"  type="text" name="p3"placeholder="APELLIDOS"> <br>
+            <div>
+                <br>
+                <input type="submit" class="boton">
+            </div>
+           </form>
+    </div>
+</body>
+</html>
